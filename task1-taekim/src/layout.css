@@ -1,0 +1,46 @@
+:root {
+}
+
+body {
+  overflow: hidden;
+  color: black;
+}
+
+body > section {
+  border-right: 1px solid var(--border-color);
+
+  & ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    & li > a {
+      color: #999;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    & li > a:hover {
+      color: black;
+    }
+  }
+}
+
+body > header {
+  border-bottom: 1px solid var(--border-color);
+
+  & h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    flex-grow: 1;
+  }
+}
+
+body > main {
+  grid-area: main;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+body > footer {
+  border-top: 1px solid var(--border-color);
+  background-color: #f0f0f0;
+}

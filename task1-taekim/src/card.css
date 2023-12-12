@@ -1,0 +1,31 @@
+article {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  width: 350px;
+  line-height: 1.5rem;
+
+  & header {
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--space);
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & main {
+    padding: var(--space);
+    width: inherit;
+    & img {
+      width: inherit;
+    }
+  }
+
+  & footer {
+    border-top: 1px solid var(--border-color);
+    & ul {
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
